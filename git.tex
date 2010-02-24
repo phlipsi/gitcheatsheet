@@ -1,0 +1,31 @@
+\documentclass[a4paper,10pt]{scrartcl}
+\usepackage[a4paper,vmargin={1cm,1cm}]{geometry}
+\let\raggedsection\centering
+\usepackage[ngerman]{babel}
+
+\begin{document}
+\section*{Git - A distributed version control system}
+\subsection*{Introduction}
+Git is a distributed version control system. Version control system means that it manages a given set of your files and their changes and thus makes it possible to return to any given situation in their history. Distributed means everyone has its own repository. Sharing work with other peoples means then loading their repositories or at least parts of their repositories into your repository.
+\subsection*{Important notions}
+\begin{itemize}
+  \item[\textbf{Repository}] A repository is a database containing all information about the tracked files, their histories, contributing authors and the dates of their contributions. When the directory \texttt{/home/johndoe/gitrepo} is a Git repository it contains a hidden \texttt{.git} directory containing all the above mentioned informations. Besides that a repository usually contains a working tree.
+  \item[\textbf{Working tree}] The working tree is the content of the directory \texttt{/home/johndoe/gitrepo} \textit{besides} the \texttt{.git} directory. It contains the currently checked out files you can work on to bring in changes and untracked files, which aren't under version control.
+  \item[\textbf{Checkout}] If you checkout from your repository you're loading a certain snapshot from your database. All tracked files from this snapshot are loaded to your working tree. Modified but not commited or staged files will be kept and not overriden by a checkout and thus stay modified.
+  \item[\textbf{Stage/Index}] Adds the given files to the database but doesn't add a commit object that links these file objects to the history of the project. It can be seen as a kind of a pre-repository where you add all files you'll commit the next time. 
+  \item[\textbf{Commit}] As a noun: A object in your database containing a list of pointers to file objects in the database and thus representing a snapshot saved in your repository.\smallskip
+
+    As a verb: Loading all files put into the index into your repository as a new commit.
+  \item[\textbf{Branch}] As a noun: A branch is a line in the development history of your repository. Different branches can diverge on a certain point of their histories and merge at a later point.\smallskip
+
+    As a verb: If you're branching you create a new pointer to the head of your current branch. Commits can be made independently to the new and the original branch. From this moment on their histories diverge.
+  \item[\textbf{Merge}] To merge one branch B into an other branch A means to merge all changes made in branch B into the branch A. If the two branches differ in the same files in a non trivial manner\footnote{Due to the fact that branching is a very strong feature of Git its merging algorithms can handle fairly complex cases. Nevertheless if for example the same line of a file differs it can't be automatically decided which proceeding will be the right.} Git can't resolve these conflicts and the user has to decide manually how to proceed.
+  \item[\textbf{Remote}] A remote is an other repository which history you track, i.e. you push and pull information to and from it to your repository.
+
+  \item[\textbf{Push}] Transport the state of your local repository to a remote
+  \item[\textbf{Fetch}] Download all file and commit objects from a remote repository into the local repository. This doesn't change your current working directory nor your active branch nor does it any merges. But you can for example create a new branch containing these downloaded objects and finally merge this branch into one of your branches to integrate these changes.
+  \item[\textbf{Pull}] The same as fetching followed by merging these changes in the current branch.
+\end{itemize}
+\subsection*{Usual workflow}
+
+\end{document}
