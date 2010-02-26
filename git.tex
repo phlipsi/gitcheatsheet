@@ -1,7 +1,9 @@
 \documentclass[a4paper,10pt]{scrartcl}
-\usepackage[a4paper,vmargin={1cm,1cm}]{geometry}
+\usepackage[a4paper,vmargin={1cm,1cm}%,hmargin={1.5cm,1.5cm}
+]{geometry}
 \let\raggedsection\centering
 \usepackage[ngerman]{babel}
+%\usepackage{listings}
 
 \begin{document}
 \section*{Git - A distributed version control system}
@@ -22,10 +24,73 @@ Git is a distributed version control system. Version control system means that i
   \item[\textbf{Merge}] To merge one branch B into an other branch A means to merge all changes made in branch B into the branch A. If the two branches differ in the same files in a non trivial manner\footnote{Due to the fact that branching is a very strong feature of Git its merging algorithms can handle fairly complex cases. Nevertheless if for example the same line of a file differs it can't be automatically decided which proceeding will be the right.} Git can't resolve these conflicts and the user has to decide manually how to proceed.
   \item[\textbf{Remote}] A remote is an other repository which history you track, i.e. you push and pull information to and from it to your repository.
 
+  \item[\textbf{Clone}] Clones a repository into a newly created directory, creates remote-tracking branches for each branch in the cloned repository, and creates and checks out an initial branch equal to the cloned repository´s currently active branch.
   \item[\textbf{Push}] Transport the state of your local repository to a remote
   \item[\textbf{Fetch}] Download all file and commit objects from a remote repository into the local repository. This doesn't change your current working directory nor your active branch nor does it any merges. But you can for example create a new branch containing these downloaded objects and finally merge this branch into one of your branches to integrate these changes.
-  \item[\textbf{Pull}] The same as fetching followed by merging these changes in the current branch.
+  \item[\textbf{Pull}] The same as fetching followed by merging of each tracked branch of the remote into the corresponding local branch.
+  \item[\textbf{Pull request}] If you're ready with some work and want to contribute it back to other repositories you can make a so called pull request. It informs the maintainers of the other repositories that they can pull your new feature from your public repository and merge it into their repositories.
 \end{itemize}
+
+\subsection*{Repositories}
+\begin{description} 
+ \item[\textbf{Main repository}] The repository containing the official version of the TensorCalculus library. Its (read only) URL is \texttt{git://github.com/waehnert/TensorCalculus.git} and can be used to fetch the newest official version of the package.
+  \item[\textbf{Your public repository}] To contribute to the TensorCalculus library you have to create a repository at an public Git hosting site, e.g. GitHub. Since the main repository is already hosted at GitHub it'll be the easiest way to host your public repository also at GitHub. During signing up you get all the nescessary information to get reading and writing access to your account and your public repositories.
+
+After creating an user account you can simply fork from the TensorCalculus main repository by visiting its site at GitHub and pressing the "Fork" button. The public URL to your public repository looks like \texttt{git://github.com/yourname/TensorCalculus.git} and the maintainer of the main repository or other people can pull your contribution from this link. This link only grants reading access. Nobody else than you has writing access to your public repository.
+  \item[\textbf{Your private repository}] This repository is a clone of your public repository on your local computer. You can commit changes, branch and merge these branches as you want. To publish these changes you have to push them into your public respository. If you want to push them into other repositories you can make a pull request to their maintainers, especially to the maintainer of the main repository.
+\end{description}
+
 \subsection*{Usual workflow}
+%Due to our multiplatform development team this section will be partially divided into a left part for the Linux users and a right part for the Windows users.
+\begin{description}
+  \item[Fork from the main repository.] This may be skipped if you only want to have a local copy of the main repository and don't want to contribute to the project. Otherwise I recommend to create a public avialable fork on GitHub.
+
+    \begin{enumerate}
+      \item Create an own account at GitHub. You'll get all the nescessary information to access its repositories from your local computer.
+      \item Go to the site of the main repository at GitHub and press fork to create an fork on GitHub into your account. This repository is your own public repository.
+    \end{enumerate}
+  \item[Install Git on your system.] This may be skipped if you're working on a MPI server because on these Git is already installed.
+    \begin{description}
+      \item[Linux:] I think \textit{you} know what to do...
+      \item[Windows:] Git is a downright linux tool (it's written by Linux Kernel Hackers...) but nevertheless there are some nice guys trying to port Git to Windows.
+        \begin{enumerate}
+          \item Install Git itself: Under \texttt{http://code.google.com/p/msysgit/downloads/list} you can download \texttt{Git-1.6.5.1-preview20091022.exe} and install it.
+          \item Now you can install TortoiseGit to integrate Git seamlessly into the Explorer to manage your local repository without the usage of the command line. It can be found under \texttt{http://code.google.com/p/tortoisegit/}
+        \end{enumerate}
+    \end{description}
+  \item[Initializing your private repository.] This may skipped if you already cloned your public repository onto your local computer.
+    \begin{description}
+      \item[Linux:] Go to your favourite directory and type 
+        \begin{verbatim} $ git clone git://github.com/waehnert/TensorCalculus.git\end{verbatim}%$
+        %\texttt{git clone git://github.com/waehnert/TensorCalculus.git} 
+      \item[Windows:] Open the Explorer and go to your favourit directory. Click on "`Git Clone..."' in the context menu and type \texttt{git://github.com/waehnert/TensorCalculus.git} into the URL input box.
+    \end{description}
+    In both cases a new directory \texttt{TensorCalculus} will be created containing a clone of the current main repository. A remote called \texttt{origin} which represents the main repository will be automatically set up.
+  \item[Update you local repository.] To merge the newest changes blindly you can simply pull from the remote \texttt{origin}
+    \begin{description}
+      \item[Linux:] Just type 
+        \begin{verbatim} $ git pull origin\end{verbatim}%$
+      \item[Windows:] Click right on the directory containing the repository and go to "`TortoiseGit\textbar Pull..."'. 
+    \end{description}
+     To inspect the changes beforhands you have fetch them from the remote, check them out into your working tree. After thoroughly testing these new changes you can merge them into one of your local branches
+    \begin{description}
+      \item[Linux:] Type
+        \begin{verbatim} 
+ $ git fetch origin
+ $ git checkout -b temp origin/master
+ $ # test the changes
+ $ git checkout master
+ $ git merge temp\end{verbatim}%$
+      \item[Windows:] Click right on the directory containing the repository and go to "`TortoiseGit\textbar Pull..."'. 
+    \end{description}
+     
+        %\begin{verbatim} $ git fetch origin
+ %$ git checkout -b temp origin/master\end{verbatim}
+%	to get the latest objects from the main repository, create a new branch \texttt{temp} filled with the changes and checkout this branch into your working tree. After thoroughly testing these new changes you can merge them into your local branch \texttt{master}
+ %       \begin{verbatim} $ git checkout master
+ %$ git merge temp
+ %$ git branch -d temp\end{verbatim}
+ %   \end{description}
+\end{description}
 
 \end{document}
