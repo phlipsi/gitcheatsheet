@@ -7,16 +7,28 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="500"
-   height="400"
+   width="630"
+   height="280"
    id="svg2"
    version="1.1"
    inkscape:version="0.47pre4 r22446"
-   sodipodi:docname="repos.svg">
+   sodipodi:docname="repos.svg"
+   inkscape:export-filename="/home/philipp/latex/gitcheatsheet/repos.png"
+   inkscape:export-xdpi="149.90392"
+   inkscape:export-ydpi="149.90392">
   <defs
-     id="defs4" />
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 200 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="500 : 200 : 1"
+       inkscape:persp3d-origin="250 : 133.33333 : 1"
+       id="perspective2906" />
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -24,9 +36,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.48"
-     inkscape:cx="249.32432"
-     inkscape:cy="200"
+     inkscape:zoom="1.3813517"
+     inkscape:cx="315"
+     inkscape:cy="140"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -51,24 +63,329 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-652.36218)">
+     transform="translate(0,-772.36218)">
+    <path
+       style="fill:none;stroke:#858585;stroke-width:1.50000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6, 1.50000000000000000;stroke-dashoffset:0"
+       d="m 11.338026,907.92717 607.323944,0"
+       id="path3667"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g3707"
+       transform="translate(-1.4788755,119.79034)">
+      <rect
+         ry="15.573724"
+         rx="19.14316"
+         y="669.04224"
+         x="16.035294"
+         height="77.868614"
+         width="491.57758"
+         id="rect2816"
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6, 1.5;stroke-dashoffset:0" />
+      <g
+         transform="translate(0.40270329,3.0517578e-5)"
+         id="g3847">
+        <rect
+           style="fill:#ffb9b9;fill-opacity:1;stroke:#5a5a5a;stroke-width:1.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="rect3590"
+           width="85.135132"
+           height="35.135136"
+           x="34.353252"
+           y="689.85962"
+           rx="10"
+           ry="10" />
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+           x="76.510666"
+           y="703.23773"
+           id="text2908"><tspan
+             sodipodi:role="line"
+             id="tspan2910"
+             x="76.510666"
+             y="703.23773">Main</tspan><tspan
+             sodipodi:role="line"
+             x="76.510666"
+             y="718.23773"
+             id="tspan3838">Repository</tspan></text>
+      </g>
+      <g
+         transform="translate(0,-3.0517578e-5)"
+         id="g3661">
+        <rect
+           ry="10"
+           rx="10"
+           y="689.85968"
+           x="165.69397"
+           height="35.135136"
+           width="85.135132"
+           id="rect2927"
+           style="fill:#b9ffc1;fill-opacity:1;stroke:#5a5a5a;stroke-width:1.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+        <text
+           id="text2929"
+           y="703.05322"
+           x="207.85138"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+           xml:space="preserve"><tspan
+             y="703.05322"
+             x="207.85138"
+             id="tspan2931"
+             sodipodi:role="line">Your</tspan><tspan
+             y="718.05322"
+             x="207.85138"
+             sodipodi:role="line"
+             id="tspan3843">Repository</tspan></text>
+      </g>
+      <g
+         transform="translate(52.147328,3.0517578e-5)"
+         id="g3859">
+        <g
+           id="g3651">
+          <rect
+             ry="10"
+             rx="11"
+             y="689.85962"
+             x="254.24474"
+             height="35.135136"
+             width="93.648643"
+             id="rect3715"
+             style="fill:#bcb9ff;fill-opacity:1;stroke:#5a5a5a;stroke-width:1.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+          <text
+             id="text3717"
+             y="703.23773"
+             x="300.65891"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+             xml:space="preserve"><tspan
+               y="703.23773"
+               x="300.65891"
+               id="tspan3719"
+               sodipodi:role="line">Other</tspan><tspan
+               id="tspan3845"
+               y="718.23773"
+               x="300.65891"
+               sodipodi:role="line">Repository</tspan></text>
+        </g>
+      </g>
+      <text
+         id="text3737"
+         y="714.8833"
+         x="423.40961"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+         xml:space="preserve"><tspan
+           y="714.8833"
+           x="423.40961"
+           id="tspan3739"
+           sodipodi:role="line">GitHub</tspan></text>
+    </g>
     <rect
-       style="fill:#dcdcdc;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       id="rect2816"
-       width="400"
-       height="150"
-       x="51.996109"
-       y="704.35828"
-       rx="30"
-       ry="30" />
+       ry="12.581782"
+       rx="12.098299"
+       y="949.0343"
+       x="14.239906"
+       height="86.85746"
+       width="123.20948"
+       id="rect3792"
+       style="fill:#dcdcdc;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="21.533121"
+       y="1022.1012"
+       id="text3800"><tspan
+         sodipodi:role="line"
+         id="tspan3802"
+         x="21.533121"
+         y="1022.1012">Maintainer</tspan></text>
+    <g
+       id="g3865"
+       transform="translate(-1.0761722,271.25658)">
+      <rect
+         style="fill:#ffb9b9;fill-opacity:1;stroke:#5a5a5a;stroke-width:1.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect3867"
+         width="85.135132"
+         height="35.135136"
+         x="34.353252"
+         y="689.85962"
+         rx="10"
+         ry="10" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+         x="76.510666"
+         y="703.23773"
+         id="text3869"><tspan
+           sodipodi:role="line"
+           id="tspan3871"
+           x="76.510666"
+           y="703.23773">Main</tspan><tspan
+           sodipodi:role="line"
+           x="76.510666"
+           y="718.23773"
+           id="tspan3873">Repository</tspan></text>
+    </g>
     <rect
-       style="fill:#ffb9b9;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       id="rect3590"
-       width="85.135132"
-       height="35.135136"
-       x="68.918922"
-       y="745.60541"
-       rx="10"
-       ry="10" />
+       style="fill:#dcdcdc;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3911"
+       width="111.64929"
+       height="86.857552"
+       x="150.95801"
+       y="949.03424"
+       rx="15.23617"
+       ry="12.585272" />
+    <g
+       id="g3875"
+       transform="translate(19.916091,271.25652)">
+      <rect
+         ry="10"
+         rx="10"
+         y="689.85968"
+         x="144.299"
+         height="35.135136"
+         width="85.135132"
+         id="rect3877"
+         style="fill:#b9ffc1;fill-opacity:1;stroke:#5a5a5a;stroke-width:1.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+         id="text3879"
+         y="703.05322"
+         x="186.45641"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+         xml:space="preserve"><tspan
+           y="703.05322"
+           x="186.45641"
+           id="tspan3881"
+           sodipodi:role="line">Your</tspan><tspan
+           y="718.05322"
+           x="186.45641"
+           sodipodi:role="line"
+           id="tspan3883">Repository</tspan></text>
+    </g>
+    <text
+       id="text3819"
+       y="1024.8044"
+       x="190.47406"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"><tspan
+         y="1024.8044"
+         x="190.47406"
+         id="tspan3821"
+         sodipodi:role="line">You</tspan></text>
+    <rect
+       ry="13.2296"
+       rx="13.146535"
+       y="949.13281"
+       x="276.86642"
+       height="86.660446"
+       width="149.74216"
+       id="rect3913"
+       style="fill:#dcdcdc;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <g
+       id="g3901"
+       transform="translate(50.668452,271.25658)">
+      <rect
+         style="fill:#bcb9ff;fill-opacity:1;stroke:#5a5a5a;stroke-width:1.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect3903"
+         width="93.648643"
+         height="35.135136"
+         x="254.24474"
+         y="689.85962"
+         rx="11"
+         ry="10" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+         x="300.65891"
+         y="703.23773"
+         id="text3905"><tspan
+           sodipodi:role="line"
+           id="tspan3907"
+           x="300.65891"
+           y="703.23773">Other</tspan><tspan
+           sodipodi:role="line"
+           x="300.65891"
+           y="718.23773"
+           id="tspan3909">Repository</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="286.80096"
+       y="1024.1206"
+       id="text3887"><tspan
+         sodipodi:role="line"
+         id="tspan3889"
+         x="286.80096"
+         y="1024.1206">Other Person</tspan></text>
+    <g
+       id="g4995"
+       transform="translate(-21.587838,119.79032)"
+       style="fill:#8b3d3d;fill-opacity:0.70754718;stroke:none">
+      <path
+         sodipodi:nodetypes="cccccccc"
+         transform="translate(0,652.36218)"
+         id="path4993"
+         d="m 71.325085,90.159136 0,94.306354 8.798799,0 -0.501997,-94.306354 7.7948,0 -11.914772,-12.86964 -11.469627,12.86964 7.292797,0 z"
+         style="fill:#8b3d3d;fill-opacity:0.70754718;fill-rule:nonzero;stroke:none" />
+    </g>
+    <path
+       style="fill:#3d8b3f;fill-opacity:0.70754718;stroke:none"
+       d="m 73.503467,852.16777 25.625317,0 C 94.30595,919.69631 330.062,870.73573 330.062,943.88552 l 6.15171,0 -11.11054,12.69833 -11.11055,-12.69833 6.15171,0 c -0.107,-58.46517 -214.06872,-23.49037 -228.542992,-78.24471 1.122746,53.89217 94.387332,38.14296 94.387332,78.1377 l 6.71896,0 -11.49066,12.91167 -11.0199,-12.91167 6.2482,0 c 0,-32.6758 -94.040283,-17.47624 -94.040283,-78.1377 l 0,77.96925 6.5478,0 -10.99856,13.48186 -10.527815,-13.48186 6.077055,0 0,-91.44229 z"
+       id="path5016"
+       sodipodi:nodetypes="cccccccccccccccccccc" />
+    <g
+       style="fill:#8b3d3d;fill-opacity:0.70754718;stroke:none"
+       transform="translate(132.16436,119.79034)"
+       id="use5012">
+      <path
+         style="fill:#8b3d3d;fill-opacity:0.70754718;fill-rule:nonzero;stroke:none"
+         d="m 62.938538,742.50934 7.3125,0 0,81.4375 -7.3125,0 11.46875,12.875 11.9375,-12.875 -7.375,0 -0.21875,-40.71875 0.21875,-40.71875 7.375,0 -11.9375,-12.84375 -11.46875,12.84375 z"
+         id="path3894"
+         sodipodi:nodetypes="cccccccccccc" />
+    </g>
+    <path
+       style="fill:#4948c2;fill-opacity:0.75316455;stroke:none"
+       d="m 181.8325,850.5309 8.2925,0 c 0,47.46657 -82.62138,50.36703 -82.62138,93.15789 l 7.40443,0 -11.55024,13.31331 -11.550243,-13.31331 7.404438,0 C 98.990194,895.18299 181.6107,892.66449 181.8325,850.5309 z"
+       id="path2873"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       sodipodi:nodetypes="cccccccc"
+       id="path3647"
+       d="m 336.94076,850.5309 8.2925,0 c 0,47.46657 -108.57471,50.36703 -108.57471,93.15789 l 7.40443,0 -11.55024,13.31331 -11.55025,-13.31331 7.40444,0 c -0.22181,-48.5058 108.35203,-51.0243 108.57383,-93.15789 z"
+       style="fill:#4948c2;fill-opacity:0.75316455;stroke:none" />
+    <path
+       style="fill:#4948c2;fill-opacity:0.75316455;stroke:none"
+       d="m 231.75953,850.5309 -8.2925,0 c 0,47.46657 124.53015,50.36703 124.53015,93.15789 l -7.40443,0 11.55024,13.31331 11.55025,-13.31331 -7.40444,0 c 0.22181,-48.5058 -124.30747,-51.0243 -124.52927,-93.15789 z"
+       id="path3649"
+       sodipodi:nodetypes="cccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="525.9859"
+       y="836.71417"
+       id="text3669"><tspan
+         sodipodi:role="line"
+         id="tspan3671"
+         x="525.9859"
+         y="836.71417">Public</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="525.9859"
+       y="1001.4103"
+       id="text3673"><tspan
+         sodipodi:role="line"
+         id="tspan3675"
+         x="525.9859"
+         y="1001.4103">Private</tspan></text>
+    <g
+       id="g3898"
+       transform="matrix(1,0,0,-1,147.07651,1686.7148)"
+       style="fill:#8b3d3d;fill-opacity:0.70754718;stroke:none" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#use5012"
+       id="use3903"
+       transform="translate(171.57108,0)"
+       width="630"
+       height="280" />
   </g>
 </svg>
